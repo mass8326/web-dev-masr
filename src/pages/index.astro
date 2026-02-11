@@ -1,0 +1,53 @@
+---
+import Root from "$layouts/root.astro";
+import { Icon } from "astro-icon/components";
+import { Picture } from "astro:assets";
+import Avatar from "$media/avatar.png";
+---
+
+<Root>
+  <main class="h-full flex text-white flex-(col center) gap-12">
+    <div class="space-y-1 text-center">
+      <Picture
+        class="mx-auto rounded-full"
+        src={Avatar}
+        width="125"
+        height="125"
+        alt="Maserooni's Avatar"
+      />
+      <h1 class="text-5xl font-bold">Maserooni</h1>
+      <p>Hiya! Nice to meet ya c:</p>
+    </div>
+    <ul class="space-y-2 text-center font-bold">
+      <li>
+        <a href="https://vrc.masr.dev">
+          <Icon
+            class="inline-block mx-1"
+            name="tabler:world-download"
+            size="2em"
+            title="VRChat Assets"
+          />
+          vrc.masr.dev
+        </a>
+      </li>
+      <li>
+        <a href="https://matrix.to/#/@masr:masr.dev">
+          <Icon
+            class="inline-block mx-1"
+            name="tabler:brand-matrix"
+            size="2em"
+            title="Matrix"
+          />
+          @masr:masr.dev
+        </a>
+      </li>
+    </ul>
+  </main>
+</Root>
+
+<style>
+  :root,
+  body {
+    --at-apply: h-full bg-neutral-9;
+  }
+</style>

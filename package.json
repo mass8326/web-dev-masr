@@ -1,0 +1,24 @@
+{
+  "name": "web-dev-masr",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "devDependencies": {
+    "@iconify-json/tabler": "^1.2.26",
+    "@unocss/core": "^66.6.0",
+    "@unocss/preset-web-fonts": "^66.6.0",
+    "@unocss/preset-wind3": "^66.6.0",
+    "@unocss/reset": "^66.6.0",
+    "@unocss/transformer-directives": "^66.6.0",
+    "@unocss/transformer-variant-group": "^66.6.0",
+    "astro": "^6.0.0-beta.6",
+    "astro-icon": "^1.1.5",
+    "sharp": "^0.34.5",
+    "unocss": "^66.6.0"
+  }
+}
